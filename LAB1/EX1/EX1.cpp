@@ -2,16 +2,63 @@
 //
 
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int correct = 0, picks[2], lotterys[2];
+
+    srand(time(0));
+
+    for (int i = 0; i < 2; i++)
+    {
+        lotterys[i] = rand() % 10;
+    }
+
+    std::cout << "Enter your first lottery pick: ";
+    std::cin >> picks[0];
+    std::cout << "Enter your second lottery pick: ";
+    std::cin >> picks[1];
+
+    std::cout << "The lottery number is " << lotterys[0] << " and " << lotterys[1] << "\n";
+
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+
+            if (picks[i] == lotterys[j])
+            {
+                correct += 1;
+
+                // avoid re select
+                lotterys[j] = -1;
+            }
+        }
+    }
+
+    switch (correct)
+    {
+    case 0:
+        std::cout << "Sorry: no match";
+        break;
+    case 1:
+        std::cout << "Match one diger: you win $1,000";
+        break;
+    case 2:
+        std::cout << "Exact match: you win $10,000";
+        break;
+    default:
+        std::cout << "Not Handle";
+        break;
+    }
 }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
 
-// 開始使用的提示: 
+// 開始使用的提示:
 //   1. 使用 [方案總管] 視窗，新增/管理檔案
 //   2. 使用 [Team Explorer] 視窗，連線到原始檔控制
 //   3. 使用 [輸出] 視窗，參閱組建輸出與其他訊息
