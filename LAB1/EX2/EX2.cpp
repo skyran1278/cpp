@@ -2,16 +2,34 @@
 //
 
 #include <iostream>
+#include <iomanip>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int start;
+    int end;
+    double fahrenheit;
+
+    std::cout << "Please input the range of Celsius temperature vallues: ";
+    std::cin >> start >> end;
+
+    std::cout << "Celsius Fahrenheit\n";
+
+    for (size_t celsius = start; celsius <= end; celsius++)
+    {
+        fahrenheit = celsius * 9.0 / 5 + 32;
+
+        std::cout << std::setiosflags(std::ios::left)
+                  << std::setw(8) << celsius
+                  << std::setiosflags(std::ios::left)
+                  << std::setw(10) << fahrenheit << "\n";
+    }
 }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
 
-// 開始使用的提示: 
+// 開始使用的提示:
 //   1. 使用 [方案總管] 視窗，新增/管理檔案
 //   2. 使用 [Team Explorer] 視窗，連線到原始檔控制
 //   3. 使用 [輸出] 視窗，參閱組建輸出與其他訊息
