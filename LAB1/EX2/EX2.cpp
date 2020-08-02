@@ -19,6 +19,7 @@ int main()
     {
         fahrenheit = celsius * 9.0 / 5 + 32;
 
+        // https://docs.microsoft.com/zh-tw/cpp/standard-library/using-insertion-operators-and-controlling-format?view=vs-2019
         std::cout << std::setiosflags(std::ios::left)
                   << std::setw(8) << celsius
                   << std::setiosflags(std::ios::left)
