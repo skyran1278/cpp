@@ -41,6 +41,7 @@
         "isDefault": true
       }
     },
+    // https://github.com/microsoft/vscode-cpptools/issues/5079#issuecomment-626090192
     {
       "label": "Open Terminal",
       "type": "shell",
