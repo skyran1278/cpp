@@ -42,6 +42,9 @@
     "typeinfo": "cpp",
     "iomanip": "cpp",
     "complex": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "functional": "cpp",
+    "iterator": "cpp",
+    "numeric": "cpp"
   }
 }
