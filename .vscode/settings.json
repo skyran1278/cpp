@@ -45,6 +45,8 @@
     "random": "cpp",
     "functional": "cpp",
     "iterator": "cpp",
-    "numeric": "cpp"
+    "numeric": "cpp",
+    "list": "cpp",
+    "map": "cpp"
   }
 }
