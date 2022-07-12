@@ -1,5 +1,7 @@
 {
   "files.associations": {
+    ".clang-format": "yaml",
+    "*.cls": "vb",
     "string": "cpp",
     "array": "cpp",
     "atomic": "cpp",
@@ -47,6 +49,25 @@
     "iterator": "cpp",
     "numeric": "cpp",
     "list": "cpp",
-    "map": "cpp"
-  }
+    "map": "cpp",
+    "bit": "cpp",
+    "compare": "cpp",
+    "concepts": "cpp",
+    "cstring": "cpp",
+    "ios": "cpp",
+    "xfacet": "cpp",
+    "xiosbase": "cpp",
+    "xlocale": "cpp",
+    "xlocinfo": "cpp",
+    "xlocmon": "cpp",
+    "xlocnum": "cpp",
+    "xloctime": "cpp",
+    "xmemory": "cpp",
+    "xstddef": "cpp",
+    "xstring": "cpp",
+    "xtr1common": "cpp",
+    "xutility": "cpp",
+    "*.in": "cpp"
+  },
+  "cmake.sourceDirectory": "${workspaceFolder}/src"
 }
