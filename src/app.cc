@@ -3,7 +3,9 @@
 #include <string>
 
 #include "app.h"
+#include "fmt/color.h"
 #include "fmt/format.h"
+#include "fmt/xchar.h"
 #include "lib1.h"
 
 int print_ok() {
@@ -16,14 +18,12 @@ int main(int argc, char *argv[]) {
   wchar_t charWStr[] = L"Hello, World!中🐍";
 
   std::string str = "Hello, World!中🐍";    // depends on the compiler: utf-8 or
-                                           // big5 (localpages)
+                                           // big5 (local pages)
   std::wstring wStr = L"Hello, World!中🐍"; // always utf-16
 
   // https://stackoverflow.com/questions/29218872/n-format-specifier-program-giving-different-outputs-on-different-compilers-why
   // int position = 0;
   // printf("%ls%n\n", charWStr, &position);
-
-  fmt::print("{0}\n", charStr);
 
   long charStrLen = strlen(charStr);
   long charWStrLen = wcslen(charWStr);
@@ -31,8 +31,12 @@ int main(int argc, char *argv[]) {
   long strLen = str.length();
   long wStrLen = wStr.length();
 
-  std::cout << charStr;
-  // std::cout << charWStr;
+  fmt::print("{0} {1} {2} {3}\n", charStrLen, charWStrLen, strLen, wStrLen);
+
+  fmt::print("{0:s}\n", fmt::format(fmt::fg(fmt::color::red), charStr));
+  std::cout << charStr << "\n";
+  // fmt::print(L"{0}\n", charWStr);
+  // std::wcout << charWStr << "\n";
 
   std::string input = "";
 
