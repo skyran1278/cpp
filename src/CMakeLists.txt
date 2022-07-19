@@ -1,10 +1,20 @@
 cmake_minimum_required(VERSION 3.15)
 
-set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/../.vcpkg/scripts/buildsystems/vcpkg.cmake"
-  CACHE STRING "Vcpkg toolchain file")
+# set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/../.vcpkg/scripts/buildsystems/vcpkg.cmake"
+#   CACHE STRING "Vcpkg toolchain file")
 
 # set the project name
 project(app VERSION 1.1)
+
+include(FetchContent)
+
+FetchContent_Declare(
+  fmt
+  GIT_REPOSITORY "https://github.com/fmtlib/fmt"
+  GIT_TAG "c4ee726532178e556d923372f29163bd206d7732" # 9.0.0
+)
+
+FetchContent_MakeAvailable(fmt)
 
 # specify the C++ standard
 set(CMAKE_CXX_STANDARD 11)
@@ -22,7 +32,7 @@ list(APPEND EXTRA_LIBS lib1)
 # add the executable
 add_executable(app app.cc)
 
-find_package(fmt CONFIG REQUIRED)
+# find_package(fmt CONFIG REQUIRED)
 target_link_libraries(app PRIVATE fmt::fmt)
 
 
