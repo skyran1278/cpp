@@ -1,5 +1,7 @@
 #include <cmath>
+#include <fstream>
 #include <iostream>
+#include <nlohmann/json.hpp>
 #include <string>
 
 #include "app.h"
@@ -8,12 +10,14 @@
 #include "fmt/xchar.h"
 #include "lib1.h"
 
+using json = nlohmann::json;
+
 int print_ok() {
   std::cout << "OK" << std::endl;
   return 0;
 }
 
-int main(int argc, char *argv[]) {
+void test_encoding() {
   char charStr[] = "Hello, World!中🐍";
   wchar_t charWStr[] = L"Hello, World!中🐍";
 
@@ -37,6 +41,18 @@ int main(int argc, char *argv[]) {
   std::cout << charStr << "\n";
   // fmt::print(L"{0}\n", charWStr);
   // std::wcout << charWStr << "\n";
+}
+
+void test_json() {
+  std::ifstream file("C:/Users/ran/Documents/cpp/src/RCAD_ASCO cp950.json");
+  json data = json::parse(file, nullptr, false, true);
+
+  std::ofstream o("C:/Users/ran/Documents/cpp/src/test.json");
+  o << std::setw(4) << data << std::endl;
+}
+
+int main(int argc, char *argv[]) {
+  test_json();
 
   std::string input = "";
 

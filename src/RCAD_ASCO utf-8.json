@@ -1,0 +1,1566 @@
+[
+  {
+    "main_key": "Set_Menu",
+    "type": "pop",
+    "ui_level": "0",
+    "cmd_name": "Set_Menu",
+    "auto_mnemonic": "N",
+    "grayed": "N",
+    "check": "N",
+    "show_name": "設定(&S)",
+    "visible": "Y",
+    "items": [
+      {
+        "main_key": "Edit.Option.RebarTable",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Edit_Option_RebarTable",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "鋼筋符號表",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_General_Design_Setting",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_General_Design_Setting",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "設計參數預設值",
+        "visible": "Y",
+        "short_cmd": ""
+      },
+      {
+        "main_key": "---",
+        "type": "---",
+        "ui_level": "0",
+        "cmd_name": "---",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "---",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3Structure_Story_Edit",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Story_Edit",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "樓層參數",
+        "visible": "Y",
+        "short_cmd": "EditStory"
+      },
+      {
+        "main_key": "CCmd3Structure_Set_Basic_Loading_Case",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Set_Basic_Loading_Case",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "基本載重",
+        "visible": "Y",
+        "short_cmd": "asco.set.basic.loading.case"
+      },
+      {
+        "main_key": "CCmd3Structure_Set_Loading_Case",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Set_Loading_Case",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "組合載重",
+        "visible": "Y",
+        "short_cmd": "asco.set.loading.case"
+      }
+    ]
+  },
+  {
+    "main_key": "RC_Beam_Menu",
+    "type": "pop",
+    "ui_level": "0",
+    "cmd_name": "RC_Beam_Menu",
+    "auto_mnemonic": "N",
+    "grayed": "N",
+    "check": "N",
+    "show_name": "RC梁(&B)",
+    "visible": "Y",
+    "items": [
+      {
+        "main_key": "CCmd3Structure_Edit_FloorGroup_Beam",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Edit_FloorGroup_Beam",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S1 樓群設定",
+        "visible": "Y",
+        "short_cmd": ""
+      },
+      {
+        "main_key": "CCmd3_DrawBeams_Edit_Parameters",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawBeams_Edit_Parameters",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S2 繪圖參數",
+        "visible": "Y",
+        "short_cmd": ""
+      },
+      {
+        "main_key": "CCmd3_Edit_Parameters_Design_Beam_by_Building",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Edit_Parameters_Design_Beam_by_Building",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S3 設計參數-全棟",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_Edit_Parameters_Design_Beam_by_Floor",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Edit_Parameters_Design_Beam_by_Floor",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S4 設計參數-各樓層",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_Edit_Parameters_by_Beam",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Edit_Parameters_by_Beam",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S5 設定參數-各跨",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_Beam_RC_Computation_Statement_Output",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Beam_RC_Computation_Statement_Output",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S6 設定計算書格式",
+        "visible": "Y"
+      },
+      {
+        //分隔線
+        "main_key": "---",
+        "type": "---",
+        "ui_level": "0",
+        "cmd_name": "---",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "---",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3Structure_Assign_Beam_Group",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Assign_Beam_Group",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M1 設編號(群組名稱)-手動",
+        "visible": "Y",
+        "short_cmd": ""
+      },
+      {
+        "main_key": "CCmd3Structure_Assign_Beam_Group_Auto",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Assign_Beam_Group_Auto",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M2 設編號(群組名稱)-自動",
+        "visible": "Y",
+        "short_cmd": ""
+      },
+      {
+        "main_key": "CCmd3Structure_Assign_Beam_Mark_DrawBeams",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Assign_Beam_Mark_DrawBeams",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M3 設定繪圖標記",
+        "visible": "Y",
+        "short_cmd": "DrawSpan.Mark"
+      },
+      {
+        "main_key": "CCmd3Structure_Design_Building_BeamRC_Rectangle",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Design_Building_BeamRC_Rectangle",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M4 全棟計算",
+        "visible": "Y",
+        "short_cmd": "Design_Building_BeamRC"
+      },
+      {
+        "main_key": "CCmd3_DrawSheet_Create",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawSheet_Create",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M5 新增配筋圖",
+        "visible": "Y",
+        "short_cmd": ""
+      },
+      {
+        "main_key": "CCmd3_DrawBeams_Export_DWG",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawBeams_Export_DWG",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M6 輸出配筋圖-DWG",
+        "visible": "Y"
+      },
+      {
+        "main_key": "Code_Menu",
+        "type": "pop",
+        "ui_level": "0",
+        "cmd_name": "Code_Menu",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M7 輸出配筋圖-其他格式",
+        "visible": "Y",
+        "short_cmd": "DrawBeams.material.table",
+        "items": [
+          {
+            "main_key": "CCmd3Structure_Export_Rebar_RC_Beam",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3Structure_Export_Rebar_RC_Beam",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "配筋檔-TXT",
+            "visible": "Y"
+          },
+          {
+            "main_key": "CCmd3_DrawBeams_Export_Excel",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_DrawBeams_Export_Excel",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "配筋檔-EXCEL",
+            "visible": "Y"
+          },
+          {
+            "main_key": "CCmd3_ListBeams_Export",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_ListBeams_Export",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "輸出梁表-TXT",
+            "visible": "Y"
+          }
+        ]
+      },
+      {
+        //分隔線
+        "main_key": "---",
+        "type": "---",
+        "ui_level": "0",
+        "cmd_name": "---",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "---",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3Structure_Design_BeamRC_Rectangle",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Design_BeamRC_Rectangle",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "R1 設計配筋跨-1(單梁設計)",
+        "visible": "Y",
+        "short_cmd": "Design_BeamRC"
+      },
+      {
+        "main_key": "CCmd3_DrawBeams_Edit_Rebar",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawBeams_Edit_Rebar",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "R2 更改配筋-1",
+        "visible": "Y",
+        "short_cmd": "CRS_DrawBeams.edit.rebar"
+      },
+      {
+        "main_key": "CCmd3_DrawBeams_Edit_Rebar2",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawBeams_Edit_Rebar2",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "R3 更改配筋-2",
+        "short_cmd": "CRS_DrawBeams.edit.rebar2",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_DrawBeams_Edit_Rebar_Torsion",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawBeams_Edit_Rebar_Torsion",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "R3 更改配筋-3腰筋",
+        "short_cmd": "CRS_DrawBeams.edit.rebar3",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3Structure_Empty_Floor_BeamRC",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Empty_Floor_BeamRC",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "R4 清空設計資料",
+        "visible": "Y",
+        "short_cmd": "Empty_Floor_BeamRC"
+      },
+      {
+        "main_key": "CCmd3_DrawBeams_Check",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawBeams_Check",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "R5 配筋NG摘要",
+        "visible": "Y",
+        "short_cmd": ""
+      },
+      {
+        //分隔線
+        "main_key": "---",
+        "type": "---",
+        "ui_level": "0",
+        "cmd_name": "---",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "---",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_DrawSheet_Edit",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawSheet_Edit",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "圖紙編輯",
+        "visible": "Y",
+        "short_cmd": ""
+      },
+      {
+        "main_key": "Nesting_Menu",
+        "type": "pop",
+        "ui_level": "0",
+        "cmd_name": "Nesting_Menu",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "手動排版",
+        "visible": "Y",
+        "short_cmd": "",
+        "shift": "N",
+        "ctrl": "N",
+        "v_key": "NULL",
+        "items": [
+          {
+            "main_key": "CCmd3_DrawBeams_Nesting",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_DrawBeams_Nesting",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "排版",
+            "visible": "Y",
+            "short_cmd": "CRS_DrawBeams.nesting"
+          },
+          {
+            "main_key": "CCmd3_DrawBeams_Split",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_DrawBeams_Split",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "分割",
+            "visible": "Y",
+            "short_cmd": "CRS_DrawBeams.split"
+          },
+          {
+            "main_key": "CCmd3_DrawBeams_Merge",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_DrawBeams_Merge",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "串接",
+            "visible": "Y",
+            "short_cmd": "CRS_DrawBeams.merge"
+          }
+        ]
+      },
+      {
+        "main_key": "CCmd3_DrawBeams_Create",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawBeams_Create",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "新增連續梁",
+        "visible": "Y",
+        "short_cmd": ""
+      },
+      {
+        "main_key": "CCmd3_DrawBeams_Duplicate",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawBeams_Duplicate",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "複製連續梁",
+        "visible": "Y",
+        "short_cmd": ""
+      },
+      {
+        "main_key": "CCmd3_DrawBeams_CopyFloor_Rebar",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawBeams_CopyFloor_Rebar",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "複製配筋量-依樓群",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3Structure_Import_Rebar_RC_Beam",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Import_Rebar_RC_Beam",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "匯入配筋檔",
+        "visible": "Y",
+        "short_cmd": ""
+      },
+      {
+        "main_key": " ",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": " ",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "備用",
+        "visible": "N"
+      },
+      {
+        "main_key": " ",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": " ",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "備用",
+        "visible": "N"
+      },
+      {
+        "main_key": " ",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": " ",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "備用",
+        "visible": "N"
+      },
+      {
+        //分隔線
+        "main_key": "---",
+        "type": "---",
+        "ui_level": "0",
+        "cmd_name": "---",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "---",
+        "visible": "Y"
+      },
+
+      {
+        "main_key": "CCmd3_Code_Rebar_Develop_Length",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Code_Rebar_Develop_Length",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "伸展與搭接長度401-100",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3Structure_Read_Member_Forces",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Read_Member_Forces",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "檢視桿件內力",
+        "visible": "Y",
+        "short_cmd": "asco.read.forces"
+      },
+      {
+        "main_key": "Code_Menu",
+        "type": "pop",
+        "ui_level": "0",
+        "cmd_name": "Code_Menu",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "輔助項目",
+        "visible": "Y",
+        "short_cmd": "",
+        "items": [
+          {
+            "main_key": "CCmd3Structure_Check_BeamRC_Section_Rectangle",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3Structure_Check_BeamRC_Section_Rectangle",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "矩形斷面分析",
+            "visible": "Y"
+          },
+          {
+            "main_key": "CCmd3Structure_Design_BeamRC_Section_Rectangle",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3Structure_Design_BeamRC_Section_Rectangle",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "矩形斷面設計",
+            "visible": "Y",
+            "short_cmd": "DrawBeams.material.table"
+          }
+        ]
+      },
+      {
+        //暫時關閉功能
+        "main_key": "Code_Menu",
+        "type": "pop",
+        "ui_level": "0",
+        "cmd_name": "Code_Menu",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "檢視",
+        "visible": "N",
+        "items": []
+      },
+      {
+        //暫時關閉功能
+        "main_key": "CCmd0Structure_Summary_BeamRC",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd0Structure_Summary_BeamRC",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "編號報告",
+        "visible": "N",
+        "short_cmd": ""
+      }
+    ]
+  },
+
+  {
+    "main_key": "RC_COL_Menu",
+    "type": "pop",
+    "ui_level": "0",
+    "cmd_name": "RC_COL_Menu",
+    "auto_mnemonic": "N",
+    "grayed": "N",
+    "check": "N",
+    "show_name": "RC柱(&C)",
+    "visible": "Y",
+    "items": [
+      {
+        "main_key": "CCmd3Structure_Edit_FloorGroup_Column",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Edit_FloorGroup_Column",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S 樓群設定",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_DrawColumns_Edit_Parameters",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawColumns_Edit_Parameters",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S 繪圖參數",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_Edit_Parameters_Design_Column",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Edit_Parameters_Design_Column",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S 設計參數",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_Ductile_Setting",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Ductile_Setting",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S 設計參數 - 強柱弱梁",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_UShear_Setting",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_UShear_Setting",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S 設計參數 - 層剪力",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_Column_RC_Computation_Statement_Output",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Column_RC_Computation_Statement_Output",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S 設定計算書格式",
+        "visible": "N"
+      },
+      {
+        "main_key": "CCmd3_Column_RC_Tables_Tool",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Column_RC_Tables_Tool",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "S P-M Curve 設定",
+        "visible": "Y"
+      },
+      {
+        //分隔線
+        "main_key": "---",
+        "type": "---",
+        "ui_level": "0",
+        "cmd_name": "---",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "---",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3Structure_Assign_Column_Group",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Assign_Column_Group",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M1 設編號 - 手動",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3Structure_Assign_Column_Group_Auto",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Assign_Column_Group_Auto",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M1 設編號 - 自動",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3Structure_Design_Building_Column_RC_Rectangle",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Design_Building_Column_RC_Rectangle",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M2 全棟計算",
+        "visible": "Y",
+        "short_cmd": "Design_Building_ColumnRC"
+      },
+      {
+        "main_key": "CCmd3_Create_DrawSheet_Column",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Create_DrawSheet_Column",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M3 新增配筋圖",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_DrawColumns_Export",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawColumns_Export",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M4 輸出配筋圖 - DWG",
+        "visible": "Y"
+      },
+      {
+        "main_key": "Code_Menu",
+        "type": "pop",
+        "ui_level": "0",
+        "cmd_name": "Code_Menu",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "M4 輸出配筋圖 - 其他格式",
+        "visible": "Y",
+        "items": [
+          {
+            "main_key": "CCmd3_ListColumns_Export",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_ListColumns_Export",
+            "auto_mnemonic": "N",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "輸出 TXT",
+            "visible": "Y"
+          },
+          {
+            "main_key": "CCmd3_ListColumns_Export",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_ListColumns_Export",
+            "auto_mnemonic": "N",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "輸出 EXCEL",
+            "visible": "N"
+          },
+          {
+            "main_key": "CCmd3_Export_DRAWRC",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_Export_DRAWRC",
+            "auto_mnemonic": "N",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "輸出 DRAWRC",
+            "visible": "Y"
+          }
+        ]
+      },
+      {
+        //分隔線
+        "main_key": "---",
+        "type": "---",
+        "ui_level": "0",
+        "cmd_name": "---",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "---",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3Structure_Design_Column_RC_Rectangle",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Design_Column_RC_Rectangle",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "R 單柱設計",
+        "visible": "Y",
+        "short_cmd": "Design_ColumnRC"
+      },
+      {
+        "main_key": "CCmd3_DrawColumns_Edit_Rebar",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawColumns_Edit_Rebar",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "R 更改配筋",
+        "visible": "Y",
+        "short_cmd": "CRS_DrawColumns.edit.rebar"
+      },
+
+      {
+        "main_key": "CCmd3_DrawSheet_Column_Edit",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawSheet_Column_Edit",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "R 圖紙編輯",
+        "visible": "N"
+      },
+
+      {
+        "main_key": "CCmd3Structure_Read_Member_Forces",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Read_Member_Forces",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "R 檢視桿件內力",
+        "visible": "N"
+      },
+      {
+        "main_key": "Code_Menu",
+        "type": "pop",
+        "ui_level": "0",
+        "cmd_name": "Code_Menu",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "R 更多",
+        "visible": "Y",
+        "short_cmd": "",
+        "items": [
+          {
+            "main_key": "CCmd3_DrawColumns_Edit",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_DrawColumns_Edit",
+            "auto_mnemonic": "N",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "更改配筋-N",
+            "visible": "Y"
+          },
+          {
+            "main_key": "CCmd3Structure_Empty_Floor_ColumnRC",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3Structure_Empty_Floor_ColumnRC",
+            "auto_mnemonic": "N",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "清空設計資料",
+            "visible": "Y"
+          },
+          {
+            "main_key": "CCmd3_Column_RC_CIRC_PMcurve",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_Column_RC_CIRC_PMcurve",
+            "auto_mnemonic": "N",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "圓柱 P-M curve",
+            "visible": "Y",
+            "short_cmd": "code.column"
+          },
+          {
+            "main_key": "CCmd3Structure_Design_Column_RC_Section",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3Structure_Design_Column_RC_Section",
+            "auto_mnemonic": "N",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "斷面設計",
+            "visible": "Y"
+          }
+        ]
+      },
+      {
+        //備用
+        "main_key": " ",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": " ",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "備用",
+        "visible": "N"
+      },
+      {
+        //暫時關閉功能
+        "main_key": "CCmd3Structure_Read_Member_Forces2",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_Read_Member_Forces2",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "各柱內力和",
+        "visible": "N",
+        "short_cmd": "code.slab"
+      }
+    ]
+  },
+  {
+    "main_key": "UShear_Menu",
+    "type": "pop",
+    "ui_level": "0",
+    "cmd_name": "UShear_Menu",
+    "auto_mnemonic": "N",
+    "grayed": "N",
+    "check": "N",
+    "show_name": "層剪力(&U)",
+    "visible": "Y",
+    "items": [
+      {
+        "main_key": "CCmd3_UShear_Setting",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_UShear_Setting",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "設定參數",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_UShear_Set_Plastic_Hinge",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_UShear_Set_Plastic_Hinge",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "設定塑鉸",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_UShear_Calculate",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_UShear_Calculate",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "計算",
+        "visible": "Y"
+      }
+    ]
+  },
+  {
+    "main_key": "Ductile_RC_Menu",
+    "type": "pop",
+    "ui_level": "0",
+    "cmd_name": "Ductile_RC_Menu",
+    "auto_mnemonic": "N",
+    "grayed": "N",
+    "check": "N",
+    "show_name": "RC核算(&K)",
+    "visible": "Y",
+    "items": [
+      {
+        "main_key": "CCmd3_Ductile_Setting",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Ductile_Setting",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "強柱弱梁-設定參數",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_Ductile_ComputeLoads",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Ductile_ComputeLoads",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "強柱弱梁-單柱韌性載重",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_Ductile_Column_RC_Export_Info",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Ductile_Column_RC_Export_Info",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "強柱弱梁-匯出核算資料",
+        "visible": "Y"
+      },
+      {
+        //分隔線
+        "main_key": "---",
+        "type": "---",
+        "ui_level": "0",
+        "cmd_name": "---",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "---",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_DrawColumns_Check",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_DrawColumns_Check",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "核算柱剪力",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_Check_BC_Shear_1",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Check_BC_Shear_1",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "梁柱接頭內剪力強度-1",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_Check_BC_Shear",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Check_BC_Shear",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "梁柱接頭內剪力強度-全棟",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3_Check_BC_Shear_1",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Check_BC_Shear_1",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "輸出算例-RC梁",
+        "visible": "N"
+      },
+
+      {
+        //暫時關閉功能
+        "main_key": "CCmd3_ColumnCheck_Column_RC_1",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_ColumnCheck_Column_RC_1",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "核算柱強度-單柱",
+        "visible": "N"
+      },
+      {
+        //暫時關閉功能
+        "main_key": "CCmd3_ColumnCheck_Column_RC",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_ColumnCheck_Column_RC",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "核算柱強度-全棟",
+        "visible": "N"
+      },
+      {
+        //暫時關閉功能
+        "main_key": "CCmd3_Check_DeepBeam_Avv",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Check_DeepBeam_Avv",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "強柱弱梁深梁垂直剪力鋼筋面積",
+        "visible": "N"
+      },
+      {
+        //暫時關閉功能
+        "main_key": "CCmd_Ductile_Design_RC_Beam_Torsion",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd_Ductile_Design_RC_Beam_Torsion",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "B.Torsion",
+        "visible": "N"
+      },
+      {
+        //暫時關閉功能
+        "main_key": "CCmd_Ductile_Check_RC_Beam",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd_Ductile_Check_RC_Beam",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "B.Ductile",
+        "visible": "N"
+      },
+      {
+        //暫時關閉功能
+        "main_key": "CCmd3_Ductile_sColumn_wBeam_Check",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Ductile_sColumn_wBeam_Check",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "強柱弱梁檢核",
+        "visible": "N"
+      }
+    ]
+  },
+
+  {
+    "main_key": "Material_RC_Menu",
+    "type": "M=",
+    "ui_level": "0",
+    "cmd_name": "Material_RC_Cmd",
+    "auto_mnemonic": "N",
+    "grayed": "N",
+    "check": "N",
+    "show_name": "RC算料(&V)",
+    "visible": "N"
+  },
+  {
+    "main_key": "PlaneDrawing_Menu",
+    "type": "M=",
+    "ui_level": "0",
+    "cmd_name": "PlaneDrawing",
+    "auto_mnemonic": "N",
+    "grayed": "N",
+    "check": "N",
+    "show_name": "平面圖(&P)",
+    "visible": "N"
+  },
+  {
+    "main_key": "Frame_Menu",
+    "type": "pop",
+    "ui_level": "0",
+    "cmd_name": "Set_Menu",
+    "auto_mnemonic": "N",
+    "grayed": "N",
+    "check": "N",
+    "show_name": "構架(&R)",
+    "visible": "Y",
+    "items": [
+      {
+        "main_key": "CCmd3_Frame_Parameters",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Frame_Parameters",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "構架編輯",
+        "visible": "Y",
+        "short_cmd": "fm.param"
+      },
+      {
+        "main_key": "CCmd3_Frame_Orient",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Frame_Orient",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "構架方向",
+        "visible": "Y",
+        "short_cmd": "fm.orient"
+      },
+      {
+        "main_key": "CCmd3_Frame_Order",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Frame_Order",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "構架次序",
+        "visible": "Y",
+        "short_cmd": "fm.order"
+      }
+    ]
+  },
+  {
+    "main_key": "Simulate_Menu",
+    "type": "M=",
+    "ui_level": "0",
+    "cmd_name": "Simulate",
+    "auto_mnemonic": "N",
+    "grayed": "N",
+    "check": "N",
+    "show_name": "平面圖Simulate(&amp;S)",
+    "visible": "N"
+  },
+  {
+    "main_key": "Tool_Menu",
+    "type": "pop",
+    "ui_level": "0",
+    "cmd_name": "Tool_Menu",
+    "auto_mnemonic": "N",
+    "grayed": "N",
+    "check": "N",
+    "show_name": "工具(&K)",
+    "visible": "Y",
+    "items": [
+      {
+        "main_key": "View_Menu",
+        "type": "pop",
+        "ui_level": "0",
+        "cmd_name": "View_Menu",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "觀視(&V)",
+        "visible": "Y",
+        "items": [
+          {
+            "main_key": "set.Precision",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_Set_PrecisionCtl",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "設定精度",
+            "visible": "Y"
+          },
+          {
+            "main_key": "CCmd3View_Set_Viewing",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3View_Set_Viewing",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "設定視窗",
+            "visible": "Y"
+          },
+          {
+            "main_key": "CCmd3Render_Switch",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3Render_Switch",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "Render",
+            "short_cmd": "render",
+            "visible": "Y"
+          },
+          {
+            "main_key": "CCmd3_Set_Lights",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_Set_Lights",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "設定光源",
+            "short_cmd": "light",
+            "visible": "Y"
+          },
+          {
+            "main_key": "CCmd3View_Set_TrackBall",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3View_Set_TrackBall",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "設定旋轉機制",
+            "visible": "Y"
+          },
+          {
+            "main_key": "CCmd3_RTMove_Dlg",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3_RTMove_Dlg",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "定量觀視",
+            "visible": "N"
+          },
+          {
+            "main_key": "CCmd3View_Set_TrackBall",
+            "type": "cmd",
+            "ui_level": "0",
+            "cmd_name": "CCmd3View_Set_TrackBall",
+            "auto_mnemonic": "Y",
+            "grayed": "N",
+            "check": "N",
+            "show_name": "Trackball",
+            "visible": "N"
+          }
+        ]
+      },
+      {
+        "main_key": "CCmd3_Measure_Distance",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Measure_Distance",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "量測距離",
+        "visible": "Y"
+      },
+      {
+        "main_key": "Mark_Point_Placement",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Mark_Point_Placement",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "標示座標",
+        "visible": "Y"
+      }
+    ]
+  },
+  {
+    "main_key": "Set_Menu",
+    "type": "pop",
+    "ui_level": "0",
+    "cmd_name": "Set_Menu",
+    "auto_mnemonic": "N",
+    "grayed": "N",
+    "check": "N",
+    "show_name": "顯示(&V)",
+    "visible": "Y",
+    "items": [
+      {
+        "main_key": "CCmd3Structure_DisplayOption",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Structure_DisplayOption",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "視窗顯示細項 (F4)",
+        "visible": "Y",
+        "short_cmd": "DispOpt"
+      },
+      {
+        "main_key": "CCmd3_Edit_Parameters_Drawing",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_Edit_Parameters_Drawing",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "一般繪圖參數",
+        "visible": "Y"
+      },
+      {
+        "main_key": "globals.option.edit",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3_CRCADLib_Option_Edit",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "一般選項",
+        "visible": "Y"
+      }
+    ]
+  },
+  {
+    "main_key": "Help_Menu",
+    "type": "pop",
+    "ui_level": "0",
+    "cmd_name": "Help_Menu",
+    "auto_mnemonic": "N",
+    "grayed": "N",
+    "check": "N",
+    "show_name": "說明",
+    "visible": "Y",
+    "items": [
+      {
+        "main_key": "CCmd0Help_Content",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd0Help_Content",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "RCAD_ASCO說明",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3Help_About",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Help_About",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "關於本程式",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3App_Setting_Files",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3App_Setting_Files",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "顯示參數檔案",
+        "visible": "Y"
+      },
+      {
+        "main_key": "---",
+        "type": "---",
+        "ui_level": "0",
+        "cmd_name": "---",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "---",
+        "visible": "Y"
+      },
+      {
+        "main_key": "CCmd3Check_For_Updates",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd3Check_For_Updates",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "檢查更新",
+        "visible": "Y"
+      },
+      {
+        "main_key": "---",
+        "type": "---",
+        "ui_level": "0",
+        "cmd_name": "---",
+        "auto_mnemonic": "N",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "---",
+        "visible": "Y"
+      },
+      {
+        "main_key": "ReLicense",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd0_VcppcV_ReLicense",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "重新授權",
+        "short_cmd": "ReLicense",
+        "visible": "Y"
+      },
+      {
+        "main_key": "RmLicense",
+        "type": "cmd",
+        "ui_level": "0",
+        "cmd_name": "CCmd0_VcppcV_RmLicense",
+        "auto_mnemonic": "Y",
+        "grayed": "N",
+        "check": "N",
+        "show_name": "移除授權",
+        "short_cmd": "RmLicense",
+        "visible": "Y"
+      }
+    ]
+  }
+]

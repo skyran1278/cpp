@@ -14,7 +14,12 @@ FetchContent_Declare(
   GIT_TAG "c4ee726532178e556d923372f29163bd206d7732" # 9.0.0
 )
 
-FetchContent_MakeAvailable(fmt)
+FetchContent_Declare(
+  json
+  URL "https://github.com/nlohmann/json/releases/download/v3.10.5/json.tar.xz"
+)
+
+FetchContent_MakeAvailable(fmt json)
 
 # specify the C++ standard
 set(CMAKE_CXX_STANDARD 11)
@@ -27,16 +32,14 @@ add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
 # add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/source-charset:utf-8>")
 
 add_subdirectory(lib1)
-list(APPEND EXTRA_LIBS lib1)
+list(APPEND LIBS lib1)
+list(APPEND PRIVATE_LIBS fmt::fmt nlohmann_json::nlohmann_json)
 
 # add the executable
 add_executable(app app.cc)
 
-# find_package(fmt CONFIG REQUIRED)
-target_link_libraries(app PRIVATE fmt::fmt)
-
-
-target_link_libraries(app PUBLIC ${EXTRA_LIBS})
+target_link_libraries(app PRIVATE ${PRIVATE_LIBS})
+target_link_libraries(app PUBLIC ${LIBS})
 
 # add the binary tree to the search path for include files
 # so that we will find app.h
